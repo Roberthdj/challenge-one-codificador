@@ -185,7 +185,7 @@ main{
     position:absolute;
     width: 95%;
     bottom: 5px;
-    text-align: center;
+    text-align: right;
     font-size: 12px;
     font-weight: bolder;
 }
