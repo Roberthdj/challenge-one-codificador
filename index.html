@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+
+    <main>
+        <section class="contenido-ingresar">
+
+            <div class="img-alura">
+                <img src="./imagenes/Logo.png" alt="Logo de Alura">
+            </div>
+
+            <div class="area-texto">
+
+                <div class="texto-encriptar">
+                    <textarea name="textoInicial" id="textoInicial" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                </div>
+
+                <div class="img-info">
+                    <img id="info" src="./imagenes/Vector.png" alt="Información importante">
+                    <p>Solo letras minúsculas y sin acento</p>
+                </div>
+
+                <div class="btn-accion">
+                    <button id="btn-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                    <button id="btn-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contenidoMostrar" class="contenido-mostrar">
+
+            <div id="textoEncriptado" class="texto-encriptado">
+                <textarea name="textoFinal" id="textoFinal"></textarea>
+                <div class="btn-copia">
+                    <button id="btn-copiar" onclick="copiarTextoFinal()">Copiar</button>
+                </div>
+            </div>
+
+            <div id="sinTexto" class="sin-texto">
+                <img id="muhneco" src="./imagenes/Muñeco.png" alt="Persona buscando">
+                <p class="msg-negrita">Ningún mensaje fue encontrado</p>
+                <p class="msg-normal">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>        
+
+        </section>
+
+    </main>
+    <script src="./Js/app.js"></script>
+</body>
+</html>
